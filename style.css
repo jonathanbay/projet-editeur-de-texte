@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    background: rgb(253, 233, 199);
+    font-size: 20px;
+}
+.titre1 {
+    text-align: center;
+    margin: 30px;     
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+  
+}
+.bold {
+    font-weight: bolder;
+    margin: 10px;
+}
+.italic {
+    font-style: italic;
+    margin: 10px;
+}
+.boxtext {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.contenu {
+    text-align: center;
+    height: 110px;
+    width: 70%;
+    border: 1px solide #000;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    outline: none;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px #000000e3;
+}
+.progressBarCompteur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compteur {
+    margin: 5px;
+    height: 30px;
+
+}  
+.progressBar {
+    background: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.795);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #000000e3;
+    width: 60%;
+    height: 20px;
+    margin: 5px;
+}
+#color {
+    background: rgb(22, 169, 228);
+    width: 0%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+#nombre {
+    resize: none;
+}
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+}
+
+.titre2 {
+    margin: 10px;
+}
+
+#icon {
+    visibility: hidden;
+    height: 90px;
+    margin: 10px;
+    padding: 2px;
+}
+
+
+
+
+
+
+

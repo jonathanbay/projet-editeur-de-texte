@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live coding</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+
+        <div>
+            <p class="titre1">Editeur de code html / css</p>
+        </div>
+
+        <div class="button">
+            <input type="button" id="boldButton" class="bold" value="G">
+            <input type="button" id="italicButton" class="italic" value="I">
+        </div>
+
+        <div  class="boxtext">
+            
+            <input type="text" id="zone1"  class="contenu" maxlength="200">
+        </div>
+        
+
+        <div class="progressBarCompteur">
+            
+            <div id="progressBar" class="progressBar" >
+                <div id="color"></div>
+            </div>
+        
+            <!-- <progress id="progressBar" class="progressBar"  min="0" max="200" value="0"  ></progress> -->
+            <div id="compteur" class="compteur">200</div>
+        </div>  
+
+    </section>
+
+    <section>
+        <div class="container">
+            <p class="titre2">live-coding</p>
+            <img id="icon" class="icon" src="./media/icon.gif" alt="loading">
+        </div>
+
+        <div  class="boxtext">
+            <input id="zone2"  class="contenu" type="text" maxlength="200" >
+        </div>
+
+    </section>
+
+   <script src="app.js"></script> 
+</body>
+</html>
