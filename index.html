@@ -10,8 +10,9 @@
 <body>
     <section>
 
-        <div>
+        <div class="intro">
             <p class="titre1">Editeur de code html / css</p>
+            <label id="dark-change"></label>        
         </div>
 
         <div class="button">
@@ -20,21 +21,16 @@
         </div>
 
         <div  class="boxtext">
-            
-            <input type="text" id="zone1"  class="contenu" maxlength="200">
+            <textarea id="zone1"  class="contenu" maxlength="200" cols="30" rows="10"></textarea>
         </div>
         
 
-        <div class="progressBarCompteur">
-            
+        <div class="progressBarCompteur">  
             <div id="progressBar" class="progressBar" >
                 <div id="color"></div>
             </div>
-        
-            <!-- <progress id="progressBar" class="progressBar"  min="0" max="200" value="0"  ></progress> -->
             <div id="compteur" class="compteur">200</div>
-        </div>  
-
+        </div> 
     </section>
 
     <section>
@@ -44,7 +40,7 @@
         </div>
 
         <div  class="boxtext">
-            <input id="zone2"  class="contenu" type="text" maxlength="200" >
+            <textarea id="zone2"  class="contenu" maxlength="200" cols="30" rows="10"></textarea>     
         </div>
 
     </section>

@@ -5,10 +5,41 @@ body {
     background: rgb(253, 233, 199);
     font-size: 20px;
 }
+
 .titre1 {
     text-align: center;
     margin: 30px;     
 }
+label {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+    background: #000;
+}
+label.active:before{
+    left:24px;
+    background: rgb(253, 233, 199);
+}
+body.night{
+    background: #333;
+    color: #fff;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -24,6 +55,7 @@ body {
 .italic {
     font-style: italic;
     margin: 10px;
+
 }
 .boxtext {
     margin: 10px;
@@ -42,6 +74,7 @@ body {
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: 0px 0px 6px 0px #000000e3;
+    resize: none;
 }
 .progressBarCompteur {
     display: flex;

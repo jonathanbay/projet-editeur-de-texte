@@ -1,12 +1,12 @@
 // ************ Clonage du texte ************** 
 
-const zone1 = document.querySelector("#zone1")
-const zone2 = document.querySelector("#zone2")
+const zone1 = document.querySelector("#zone1");
+const zone2 = document.querySelector("#zone2");
+const saisie = document.querySelector("#zone1");
 
 zone1.addEventListener("keyup", () => {
-
-    const saisie = document.querySelector("#zone1").value;
-    zone2.value = saisie;
+    
+    zone2.innerHTML = saisie.value;
     
 });
 
@@ -56,19 +56,38 @@ document.getElementById('compteur').innerHTML = 200-zone1.value.length;
 
 // *************** progresse bar *****************
 
-document.getElementById('zone1').addEventListener('keyup', function() {
+document.getElementById('zone1').addEventListener('keyup', () => {
 document.getElementById('color').style.width = zone1.value.length/2 + "%" ;
 });
 
 // // **************** changement couleur progressbar ************
 
+zone1.addEventListener('keyup', () => {
 
-// if (zone1.length > 5 ) {
+if(saisie.value.length >= 0 && saisie.value.length <= 50) {
+    document.getElementById('color').style.backgroundColor="blue";
+}
+else  if(saisie.value.length >= 51 && saisie.value.length <= 100){
+    document.getElementById('color').style.backgroundColor="purple";
+}
+else if (saisie.value.length >= 101 && saisie.value.length <= 150){
+    document.getElementById('color').style.backgroundColor="orange";
+}
+else if (saisie.value.length >= 151 && saisie.value.length <= 200){
+    document.getElementById('color').style.backgroundColor="red";
+}
+});
 
-//     console.log("ok");
-//     // document.getElementById('color').style.background = "red" ;
+// ******************* darkmode *******************
 
-// }
+let content = document.getElementsByTagName("body")[0];
+let darkmode = document.getElementById('dark-change');
+
+darkmode.addEventListener('click', () => {
+    darkmode.classList.toggle('active');
+    content.classList.toggle('night');
+})
+
 
 
 
